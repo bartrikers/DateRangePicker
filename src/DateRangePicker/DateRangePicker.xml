@@ -64,7 +64,7 @@
 		<property key="showTimePicker" type="boolean" defaultValue="false">
             <caption>Show Timepicker</caption>
             <category>Date Picker options</category>
-            <description>Allow selection of dates with times, not just dates. If you want the time to be shown, a custom date format is required.</description>
+            <description>Allow selection of dates with times, not just dates. If you want the time to be shown, a custom date format is required</description>
         </property>
 		<property key="showWeekNumbers" type="boolean" defaultValue="false">
             <caption>Show weeknumbers</caption>
