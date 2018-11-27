@@ -1,4 +1,4 @@
-# DateRangerPicker
+# DateRangePicker
 An implementation of Dann Grossman's DateRangePicker (http://www.daterangepicker.com). 
 
 Some key-features:
