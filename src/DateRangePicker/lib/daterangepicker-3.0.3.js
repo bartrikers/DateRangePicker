@@ -9,7 +9,7 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Make globaly available as well
-        define(['DateRangePicker/lib/moment.min', 'DateRangePicker/lib/jquery-1.12.4'], function (moment, jquery) {
+        define(['DateRangePicker/lib/moment', 'DateRangePicker/lib/jquery-1.12.4'], function (moment, jquery) {
             if (!jquery.fn) jquery.fn = {}; // webpack server rendering
             return factory(moment, jquery);
         });

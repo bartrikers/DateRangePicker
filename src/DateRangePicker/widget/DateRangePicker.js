@@ -16,7 +16,7 @@ define([
 	"dojo/query",
     "dojo/text!DateRangePicker/widget/template/DateRangePicker.html",
     "DateRangePicker/lib/jquery-1.12.4",
-	"DateRangePicker/lib/moment.min",
+	"DateRangePicker/lib/moment",
 	"DateRangePicker/lib/daterangepicker-3.0.3"
 
 ], function(declare, _WidgetBase, _TemplatedMixin, dom, domClass, dojoOn, dojoConstruct, dojoHtml, dojoQuery, widgetTemplate, $) {
@@ -89,7 +89,7 @@ define([
 			//init daterange picker
 			 $(this._dateRangePicker).daterangepicker(this.params);
 			
-			var drpData = $(this._dateRangePicker).data('daterangepicker')
+			var drpData = $(this._dateRangePicker).data('daterangepicker');
 			
 			//set initial start and end date, to be used for clearing the calendar
 			this._initialStartDate = drpData.startDate;
@@ -146,10 +146,9 @@ define([
 					defaultPlaceholderText = this.customDateFormat + ' - ' + this.customDateFormat;
 				} else {
 						defaultPlaceholderText = 'MM/DD/YYYY - MM/DD/YYYY';
-					}
 				}
-				
 			}
+			
 			$(this._dateRangePicker).attr("placeholder", defaultPlaceholderText);
 
 			// Set label
@@ -215,7 +214,7 @@ define([
             if (startDate && endDate) {
                 var startDateObject = new Date(startDate);
 				var endDateObject = new Date(endDate);
-				var drpData = $(element).data('daterangepicker')
+				var drpData = $(element).data('daterangepicker');
 				drpData.setStartDate(startDateObject);
 				drpData.setEndDate(endDateObject);
             } else {
@@ -278,7 +277,7 @@ define([
             this._clearValidations();
 
 			var validation = validations[0],
-                startDateMessage = validation.getReasonByAttribute(this.startDateAttribute),
+                startDateMessage = validation.getReasonByAttribute(this.startDateAttribute);
 				endDateMessage = validation.getReasonByAttribute(this.endDateAttribute);
 
             if (this._readOnly) {

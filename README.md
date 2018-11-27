@@ -7,6 +7,8 @@ Some key-features:
 - set custom date/time format
 - set a custom placeholder text
 
+See https://daterangepicker.mxapps.io for a demo.
+
 ## Installation
 Add the widget to a dataview and select a start datetime and end datetime attribute.
 
