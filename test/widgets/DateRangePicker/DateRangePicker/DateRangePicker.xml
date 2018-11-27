@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="DateRangePicker.widget.DateRangePicker" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>Date Range Picker</name>
+  <description>A Date Range Picker, based on the http://www.daterangepicker.com plugin</description>
+  <icon>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</icon>
+  <properties>
+		<!-- General -->
+        <property key="startDateAttribute" type="attribute">
+            <caption>Begin date (Attribute)</caption>
+            <category>General</category>
+			<description></description>
+            <attributeTypes>
+                <attributeType name="DateTime"/>
+            </attributeTypes>
+        </property>
+		<property key="endDateAttribute" type="attribute">
+            <caption>End date (Attribute)</caption>
+            <category>General</category>
+			<description></description>
+            <attributeTypes>
+                <attributeType name="DateTime"/>
+            </attributeTypes>
+        </property>
+		<property key="labelCaption" type="translatableString" required="false">
+			<caption>Label</caption>
+			<category>Display</category>
+			<description>The label to show on the form, leave empty to show no label.</description>
+		</property>
+		<property key="labelWidth" type="integer" required="true" defaultValue="3">
+			<caption>LabelWidth</caption>
+			<category>Display</category>
+			<description>The width of the label, only applicable for horizontal display.</description>
+		</property>
+		<property key="displayEnum" type="enumeration" defaultValue="horizontal" required="true">
+			<caption>LabelDisplay</caption>
+			<category>Display</category>
+			<description>How to display the label</description>
+			<enumerationValues>
+				<enumerationValue key="horizontal">Horizontal</enumerationValue>
+				<enumerationValue key="vertical">Vertical</enumerationValue>
+			</enumerationValues>
+		</property>
+		<property key="placeholderText" type="string" required="false">
+            <caption>Placeholder text</caption>
+            <category>Display</category>
+            <description></description>
+        </property>
+        <property key="iconTooltip" type="string" required="false">
+            <caption>Icon tooltip</caption>
+            <category>Display</category>
+            <description>Tooltip on the calendar icon.</description>
+        </property>
+		<!-- Date Picker options -->
+		<property key="useCustomDateFormat" type="boolean" defaultValue="false">
+            <caption>Use custom date format</caption>
+            <category>Date Picker options</category>
+            <description></description>
+        </property>
+		<property key="customDateFormat" type="string" defaultValue="MM/DD/YYYY" required="false">
+            <caption>Custom Date format</caption>
+            <category>Date Picker options</category>
+            <description>Custom date format that is used, e.g. MM/DD/YYYY or DD-MM-YYYY. If timepicker is enabled, the time format can also be included, e.g. MM/DD/YYYY h:mm A or DD-MM-YYYY HH:mm</description>
+        </property>
+		<property key="showTimePicker" type="boolean" defaultValue="false">
+            <caption>Show Timepicker</caption>
+            <category>Date Picker options</category>
+            <description>Allow selection of dates with times, not just dates. If you want the time to be shown, a custom date format is required.</description>
+        </property>
+		<property key="showWeekNumbers" type="boolean" defaultValue="false">
+            <caption>Show weeknumbers</caption>
+            <category>Date Picker options</category>
+            <description>Show localized week numbers at the start of each week on the calendars</description>
+        </property>
+		<property key="show24HourTimePicker" type="boolean" defaultValue="false">
+            <caption>Show 24-hour timepicker</caption>
+            <category>Date Picker options</category>
+            <description>Use 24-hour time picker instead of 12-hour times, removing the AM/PM selection</description>
+        </property>
+		<property key="timePickerIncrement" type="integer" defaultValue="1">
+            <caption>Timepicker increment</caption>
+            <category>Date Picker options</category>
+            <description>Increment of the minutes selection list for times (i.e. 30 to allow only selection of times ending in 0 or 30)</description>
+        </property>
+        <!-- Behavior options -->
+        <property key="onChangeMicroflow" type="microflow" required="false">
+            <caption>On change microflow</caption>
+            <category>Behavior</category>
+            <description></description>
+            <returnType type="Void" />
+        </property>
+		<property key="onChangeMicroflowProgress" type="boolean" defaultValue="false">
+            <caption>Show progress bar</caption>
+            <category>Behavior</category>
+            <description></description>
+        </property>
+		<property key="onChangeMicroflowProgressMsg" type="string" required="false">
+            <caption>Progress message</caption>
+            <category>Behavior</category>
+            <description></description>
+        </property>
+		<property key="onChangeMicroflowAsync" type="boolean" defaultValue="false">
+            <caption>Asynchronous</caption>
+            <category>Behavior</category>
+            <description>Microflow call type.</description>
+        </property>
+	</properties>
+</widget>
