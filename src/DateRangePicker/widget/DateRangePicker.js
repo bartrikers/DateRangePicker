@@ -169,8 +169,14 @@ define([
         // mxui.widget._WidgetBase.update is called when context is changed or initialized. Implement to re-render and / or fetch data.
         update: function update(obj, callback) {
             logger.debug(this.id + ".update");
-            this._contextObj = obj;
-            this._updateDateRangePicker(this._dateRangePicker, obj.get(this.startDateAttribute), obj.get(this.endDateAttribute));
+			if (obj) {
+				this._contextObj = obj;
+				this._updateDateRangePicker(this._dateRangePicker, obj.get(this.startDateAttribute), obj.get(this.endDateAttribute));
+				$(this._dateRangePicker).removeAttr('disabled');
+			} else {
+				//clear value and disable datepicker when there is no contextObject
+				$(this._dateRangePicker).attr("disabled", 'disabled').val('');
+			}
             this._resetSubscriptions();
             callback();
         },
@@ -223,7 +229,6 @@ define([
 				this._contextObj.set(this.endDateAttribute, "");
 			}
         },
-
         _onChange: function _onChange(dateRangePickerElement) {
             logger.debug(this.id + "._onChange");
 			this._clearValidations();
