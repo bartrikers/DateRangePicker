@@ -161,7 +161,9 @@ define([
             if (this.displayEnum === "horizontal") {
                 domClass.add(this.inputLabel, "col-sm-" + this.labelWidth);
                 domClass.add(this.inputWrapper, "col-sm-" + (12 - this.labelWidth));
-            }
+            } else {
+				domClass.add(this.widgetWrapper, 'no-columns');
+			}
 
             this._setupEvents();
         },
@@ -203,7 +205,8 @@ define([
 				timePicker24Hour: this.show24HourTimePicker,
 				timePickerIncrement: this.timePickerIncrement,
 				locale: {
-					cancelLabel: 'Clear'
+					cancelLabel: 'Clear',
+					firstDay: this.firstDay == 'Monday' ? 1 : 7
 				}
             };
 			

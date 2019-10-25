@@ -66,6 +66,15 @@
             <category>Date Picker options</category>
             <description>Allow selection of dates with times, not just dates. If you want the time to be shown, a custom date format is required</description>
         </property>
+		<property key="firstDay" type="enumeration" required="true" defaultValue="Monday">
+            <caption>First day of the week</caption>
+            <category>Date Picker options</category>
+            <description>First day of the week</description>
+			<enumerationValues>
+				<enumerationValue key="Monday">Monday</enumerationValue>
+				<enumerationValue key="Sunday">Sunday</enumerationValue>
+			</enumerationValues>
+        </property>
 		<property key="showWeekNumbers" type="boolean" defaultValue="false">
             <caption>Show weeknumbers</caption>
             <category>Date Picker options</category>
