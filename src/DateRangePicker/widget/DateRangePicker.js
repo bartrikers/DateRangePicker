@@ -15,19 +15,27 @@ define([
     "dojo/html",
 	"dojo/query",
     "dojo/text!DateRangePicker/widget/template/DateRangePicker.html",
+	"dojo/text!DateRangePicker/widget/template/DateRangePicker_Mx7.html",
     "DateRangePicker/lib/jquery-1.12.4",
 	"DateRangePicker/lib/moment",
 	"DateRangePicker/lib/daterangepicker-3.0.3"
 
-], function(declare, _WidgetBase, _TemplatedMixin, dom, domClass, dojoOn, dojoConstruct, dojoHtml, dojoQuery, widgetTemplate, $) {
+], function(declare, _WidgetBase, _TemplatedMixin, dom, domClass, dojoOn, dojoConstruct, dojoHtml, dojoQuery, widgetTemplate, widgetTemplate_Mx7, $) {
     "use strict";
+
+	function getMxVersion () {
+		var mxVersion = mx.version;
+		var mxMajorVersion = mxVersion.substring(0, mxVersion.indexOf("."));
+		
+		return mxMajorVersion;
+	}
 
     return declare("DateRangePicker.widget.DateRangePicker", [
         _WidgetBase,
         _TemplatedMixin
     ], {
         // _TemplatedMixin will create our dom node using this HTML template.
-        templateString: widgetTemplate,
+        templateString: getMxVersion() == 7 ? widgetTemplate_Mx7 : widgetTemplate,
 
         // Parameters configured in the Modeler.
         iconTooltip: "",
